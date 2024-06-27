@@ -1,9 +1,9 @@
 function setup () {
     //aqui vou criar minha "mesa"
-    creatcanvas (600,400);
+    createCanvas (600,400);
 }
 
 function draw(){
-    //aqui vou a cor da "mesa"
-    bakground (124,252,0);
+    //aqui vou por a cor d "mesa"
+    background (124,252,0);
 }
