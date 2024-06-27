@@ -10,4 +10,14 @@ function setup () {
 function draw(){
     //aqui vou por a cor d "mesa"
     background (75,0,130);
+    //chamado a função
+    criaBolinha (xBolinha, yBolinha, tamBolinha)
+
 }
+
+
+
+//função bolinha
+function criarBolinha (Bolinha, yBolinha, tamBolinha)[
+    circle (xBolinha, yBolinha, tamBolinha);
+]
