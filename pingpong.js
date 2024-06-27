@@ -5,5 +5,5 @@ function setup () {
 
 function draw(){
     //aqui vou a cor da "mesa"
-    bakground (75,0,130);
+    bakground (0,255,0);
 }
