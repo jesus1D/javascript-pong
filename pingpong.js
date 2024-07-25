@@ -13,11 +13,14 @@ function setup(){
 }
 
 function draw(){
+    //função resposável pelo "desenho e animação da mesa"
     //aqui vou por a cor da "mesa"
     //A cor da mesa é em rgb
     background(128,128,0); 
-    //chamando a função
+    //chamando a função cria bolinha para criar a bolinha
     criaBolinha(xBolinha, yBolinha, tamBolinha);
+    //chamando a função move bolinha 
+    moveBolinha ();
 }
 
 //função bolinha
