@@ -21,6 +21,8 @@ function draw(){
     criaBolinha(xBolinha, yBolinha, tamBolinha);
     //chamando a função move bolinha 
     moveBolinha ();
+    //chamando a borda
+    Borda ()
 }
 
 //função bolinha
@@ -32,4 +34,12 @@ function criaBolinha(xBolinha, yBolinha,tamBolinha){
 function moveBolinha(){
     xBolinha = xvelocidadeBolinha + xBolinha;
     yBolinha = yvelocidadeBolinha+ yBolinha;
+}
+
+function Borda ( ) {
+    if (xBolinha > width || xBolinha < 0)
+        xvelocidadeBolinha *= -1;
+}
+if (yBolinha > height || yBolinha < 0){
+    yvelocidadeBolinha *= -1;
 }
