@@ -3,7 +3,7 @@ let xBolinha = 300;
 let yBolinha = 200;
 let tamBolinha = 25;
 
-//conig velocidade bolinha
+//config velocidade bolinha
 let xvelocidadeBolinha = 6;
 let yvelocidadeBolinha = 6;
 
@@ -13,16 +13,16 @@ function setup(){
 }
 
 function draw(){
-    //função resposável pelo "desenho e animação da mesa"
+    //função responsável pelo "desenho e animação da mesa"
     //aqui vou por a cor da "mesa"
     //A cor da mesa é em rgb
     background(128,128,0); 
     //chamando a função cria bolinha para criar a bolinha
     criaBolinha(xBolinha, yBolinha, tamBolinha);
-    //chamando a função move bolinha 
-    moveBolinha ();
+    //chamando a função mov bolinha
+    moveBolinha();
     //chamando a borda
-    Borda ()
+    Borda();
 }
 
 //função bolinha
@@ -30,16 +30,18 @@ function criaBolinha(xBolinha, yBolinha,tamBolinha){
     circle (xBolinha,yBolinha,tamBolinha);
 }
 
-//função move bolinha 
+//função move bolinha
 function moveBolinha(){
     xBolinha = xvelocidadeBolinha + xBolinha;
-    yBolinha = yvelocidadeBolinha+ yBolinha;
+    yBolinha = yvelocidadeBolinha + yBolinha;
 }
 
-function Borda ( ) {
-    if (xBolinha > width || xBolinha < 0)
+function Borda(){
+    if (xBolinha > width || xBolinha < 0){
         xvelocidadeBolinha *= -1;
+    }
+    if (yBolinha > height || yBolinha < 0){
+        yvelocidadeBolinha *= -1;
+    }
 }
-if (yBolinha > height || yBolinha < 0){
-    yvelocidadeBolinha *= -1;
-}
+
