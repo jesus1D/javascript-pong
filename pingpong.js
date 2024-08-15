@@ -7,6 +7,12 @@ let tamBolinha = 25;
 let xvelocidadeBolinha = 6;
 let yvelocidadeBolinha = 6;
 
+//configura raquete
+let xRaquete = 5;
+let yRaquete = 150;
+let larguraRaquete = 10;
+let alturaRaquete = 90;
+
 function setup(){
     //aqui vou criar minha "mesa"
     createCanvas(600,400);
@@ -44,4 +50,9 @@ function Borda(){
         yvelocidadeBolinha *= -1;
     }
 }
+function criaRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
+    fill("blue");
+    rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
+}
+///dasawdassfdSDGASDFgdsGSDA
 
